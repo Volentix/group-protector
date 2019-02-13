@@ -601,39 +601,7 @@ class Defender:
     """
     def action_processing(self):
 
-        if "/add_question" in self.message_text:
-            pass
-        elif "/start_quiz" in self.message_text:
-            # quiz = self.col_questions.find_one({"Completed": False})
-            #
-            # if quiz is not None:
-            #     reply_markup = [[InlineKeyboardButton(
-            #         text='%s️⃣' % str(int(_id) + 1),
-            #         callback_data='vote|%s|%s' % (quiz['_id'], _id)) for _id in range(0, len(quiz['answers']))]]
-            #
-            #     text = "<i>Volentix Quiz. What will your choice?</i>\n\n<b>%s</b>\n\n" \
-            #            "1️⃣ %s \n2️⃣ %s \n3️⃣ %s\n4️⃣ %s\n\n" \
-            #            "<b>To Participate: Users need to push start in</b> %s\n" \
-            #            "<b>Winner</b> will get <b>%s VTX💰</b>" % (
-            #         quiz['question'],
-            #         quiz['answers'][0],
-            #         quiz['answers'][1],
-            #         quiz['answers'][2],
-            #         quiz['answers'][3],
-            #         quiz_bot,
-            #         win_amount
-            #     )
-            #
-            #     self.bot.send_message(
-            #         quiz_group,
-            #         text,
-            #         parse_mode='HTML',
-            #         reply_markup=InlineKeyboardMarkup(reply_markup)
-            #     )
-            pass
-
-
-        elif "/faq" in self.text:
+        if "/faq" in self.text:
             self.get_questions()
 
         elif "get_questions|" in self.text:

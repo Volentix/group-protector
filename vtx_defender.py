@@ -1,12 +1,7 @@
 import json
-import os
 import traceback
-
 import datetime
-
 import re
-
-import tweepy
 from bson import ObjectId
 from pymongo import MongoClient
 from telegram import Bot, InlineKeyboardMarkup, InlineKeyboardButton
@@ -25,7 +20,6 @@ with open('services.json') as conf_file:
 REGEX = "(работ|бесплат|airdrop|програм|канал|подпис|асик|реклама|продаж|прода|куплю|обмен)|([a-zA-Z]+\.)+[a-zA-Z]+|http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+"
 REGEX_ALL = "(https://t\.me/)|(t\.me/joinchat/)|(telegram\.me/)"
 BROADCAST_CHANNEL = '-1001248917216'
-MY_ID = "425310487"
 WELCOME_MESSAGE = """
 <b>Welcome to the VTX Telegram group!</b>\n\nNow you can interact with users in our telegram group @Volentix. Don't forget to read our <a href="t.me/Volentix/11027">pinned message</a> 
 """
@@ -656,23 +650,7 @@ class Defender:
                     }
                 )
 
-                user_pending_msgs = list(self.pending_msgs_collection.find(
-                    {"user_id": self.user_id}))
-                for _msg in user_pending_msgs:
-                    try:
-                        self.bot.forward_message(
-                            _msg['group_id'],
-                            MY_ID,
-                            _msg['_id']
-                        )
-                        self.bot.delete_message(
-                            MY_ID,
-                            _msg['_id']
-                        )
-                    except Exception as exc:
-                        print(exc)
-                    self.pending_msgs_collection.remove(_msg)
-
+                
             else:
                 self.col_users.update(
                     {

@@ -1,0 +1,34 @@
+{
+    "mongo":
+    {
+      "connectionString": "mongodb://localhost:27017/{DATABASE}"
+    },
+    "telegram_bot":
+    {
+      "bot_token":"{TOKEN}"
+    },
+    "quiz_bot": "@vtxprotector_bot",
+    "win_amount": 10,
+    "quiz_group": "{GROUP_ID}",
+    "questions":
+      [
+      ],
+    "faq":
+    [
+      {"id": "1", "Q": "When is the VTX sale?", "A": "The formal sale is currently scheduled to begin on February 1, 2019 at 3:00am GMT. As currently planned, it will remain open until the \"hard cap\" is reached (see below), or until 60 days after commencement of the formal sale, whichever is sooner (unless earlier reached by applicants being successfully approved to purchase the right to receive VTX in the whitelist process formally commencing on November 5, 2018 at 10:00pm GMT)."},
+      {"id": "2", "Q": "How can I join the whitelist?", "A": "You can request to be whitelisted at https://Volentix.io/vtx-whitelist/.\nAll applicants will be subject to rigorous  KYC/AML policies and procedures and such other due diligence as Volentix may decide to conduct in its sole discretion. Volentix reserves the right to reject any potential purchaser in the sole and absolute discretion of Volentix. All purchasers will be required to agree to, and be bound by, the VTX Terms & Conditions."},
+      {"id": "3", "Q": "Are there any discounts or bonuses available?", "A": "Yes. In the formal sale, it is currently planned that bonuses will be offered through a progressively adjusting algorithm based on scaled pricing (see below). There is also a 200 VTX bonus currently available simply for successfully completing the whitelist approval process."},
+      {"id": "4", "Q": "What is the price of VTX?", "A": "Volentix is planning to sell 364M VTX for approximately US$48.5M (the \"hard cap\"). We estimate the scaled price of VTX in USD will range from $0.17 to $0.33 as the early discounts scale down. We emphasize this is an estimate; the actual price of VTX converted to USD may vary substantially from that estimate."},
+      {"id": "5", "Q": "What business entity will be issuing VTX?", "A": "VTX is planned to be issued by STAIDER LLC, a Georgia company in the process of obtaining an IFC license."},
+      {"id": "6", "Q": "Will U.S. or Chinese persons be allowed to purchase VTX?", "A": "No. U.S. persons are not permitted to whitelist or to purchase VTX at the moment. It is possible that U.S. persons may be permitted to buy VTX in the future, depending on then-applicable U.S. law. Chinese persons are similarly restricted."},
+      {"id": "7", "Q": "Will there be a lockup period for VTX?", "A": "No, there will not be a lockup period after VTX is actually issued. However, purchasers shall not sell, assign, transfer, or trade VTX to U.S. or Chinese persons."},
+      {"id": "8", "Q": "Will there be a minimum purchase requirement?", "A": "Yes. The minimum purchase requirement is currently planned to be 1.0BTC or equivalent in currencies accepted via our payment gateways Zixipay and Blocktopus."},
+      {"id": "9", "Q": "What will be the supply of VTX, and how will it be distributed?", "A": "The supply of VTX is currently planned to be: \n800M VTX for staking, verification of transactions or aggregator services. \n65M VTX for early supporters.    \n364M VTX made available for sale to support the hard cap of $48.5M.\n455M VTX as a public treasury governed by VTX holders.                         \n286M VTX for existing Volentix contributors, supporters, and facilitators. These VTX are “time-locked”, meaning they are released on an incremental schedule over period of 4 years commencing upon first day of VTX issuance.\n130M VTX for future participation by contributors and facilitators of the Volentix ecosystem."},
+      {"id": "10", "Q": "What is the planned revenue allocation?", "A": "1. Payment of expenses, including debts and deferrals.\n2. Use of net revenue:\n● 35% to continue building the Volentix digital assets ecosystem, including research and development and regular maintenance and upgrades.\n● 33% for marketing, branding, promotion, awareness, and recruitment. Including widespread community adoption of VDEX, VERTO, VESPUCCI, VENUE, and other native open-source applications.\n● 10% as a strategic reserve to manage threats and other contingencies.\n● 10% as compensation for early-phase Contributors, Supporters, and Facilitators.\n● 12% for legal expenses and trading portfolio.\n3. Note: Percentages of revenue allocation are discretionary and may vary."},
+      {"id": "11", "Q": "Will VTX be an ERC-20 token?", "A": "No. We plan to issue VTX via customized open-source eos.io technology."},
+      {"id": "12", "Q": "How can I stay informed about the VTX sale?", "A": "You can sign up for email updates on our website, join our Telegram group, and join our Telegram announcements channel."},
+      {"id": "13", "Q": "How can I learn more about Volentix?", "A": "Check out <a href='https://medium.com/@thegreatdane656/creating-a-comprehensive-digital-assets-ecosystem-dae-307927d1f74'>this short article</a> on the digital assets ecosystem (DAE) concept.\nBrowse our <a href='https://volentix.io/'>website</a>, where you’ll find links to the <a href='https://volentix.io/vdex-white-paper/'>VDEX white paper</a> and other important information.\n<b>Watch</b> <a href='https://youtu.be/SkvAvlYOZwo'>the Volentix Rising short film</a>.\n<b>Visit our</b> <a href='https://www.youtube.com/channel/UCGjUbCE-kht1gK6y5neD1cQ'>YouTube channel</a>.\n<b>Browse our</b> <a href='https://github.com/Volentix'>Github</a>.</b>\n<b>Follow us on Twitter @volentix</b>"},
+      {"id": "14", "Q": "How can I get involved in Volentix?", "A": "\n<b>Join the conversation on our</b> <a href='http://t.me/volentix'>Telegram group</a>. And visit <a href='https://venue.volentix.io/'>Venue</a> for information on possible rewards. You are always welcome to email any of our development partners. <a href='http://info@volentixlabs.com/'>VLabs</a>, or <a href='http://info@pythagoras.systems/'>Pythagoras</a>, or <a href='http://senaticlabs.io/'>Semantic Labs</a>\nPlease stay alert for scams, and especially of scammers posing as Volentix team members. The only way currently to apply to purchase VTX is by following the whitelist process on our website. Private inquiries may be made, however, by contacting us and speaking with one of our team members."}
+    ]
+}
+
